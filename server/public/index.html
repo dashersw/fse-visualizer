@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-title" content="fse-visualizer">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="transparent">
+  <title>fse-visualizer</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/pitch.css">
+  <link rel="stylesheet" href="./styles/players.css">
+</head>
+
+<body>
+  <div id="world">
+    <div id="container">
+      <div id="stadium">
+        <div id="players"></div>
+        <div id="pitch">
+          <div class="zone left">
+            <span class="box"></span>
+            <span class="net"></span>
+          </div>
+          <div class="zone right">
+            <span class="box"></span>
+            <span class="net"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="control-panel">
+    <span class="button" id="toggle3d">Toggle 3D</span>
+    <span class="button" id="toggleVertical">Toggle Vertical</span>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

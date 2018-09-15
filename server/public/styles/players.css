@@ -1,0 +1,74 @@
+#players {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 3em);
+  margin: 0 1.5em;
+  top: 0;
+  z-index: 1;
+  transform: translateZ(5px);
+  transform-style: preserve-3d
+}
+
+.player {
+  position: absolute;
+  transition: 0.2s all linear;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.player .name {
+  line-height: 2em;
+  color: white;
+  font-size: 0.6em;
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-50%) translateY(70%) translateZ(1px);
+  transition: 1s all;
+  white-space: nowrap;
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.8), 0 0 0.5em rgba(0, 0, 0, 0.8), 0 0 0.5em rgba(0, 0, 0, 0.8), 0 0 1em rgba(0, 0, 0, 0.8), 0 0 2em rgba(0, 0, 0, 0.8), 0 0 2.5em rgba(0, 0, 0, 0.8);
+}
+
+.player .icon {
+  height: 1.5em;
+  width: 1.5em;
+  background: white;
+  background-size: 100%;
+  border: 0.1em solid white;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.5);
+  top: -0.75em;
+  left: -0.75em;
+  transform: translate3d(0, 0, 0px);
+}
+
+.icon.brazil {
+  background-image: url(../img/br.svg)
+}
+
+.icon.germany {
+  background-image: url(../img/de.svg);
+  background-size: 100%;
+}
+
+.player-card {
+  transition: 1s transform;
+  transform: translate3d(0, 1px, 3px) rotateZ(0.1deg);
+}
+
+.threed.vertical .player-card {
+  transform: rotateY(50deg) rotateX(0deg) rotateZ(-90deg) translateY(-17px);
+}
+
+.threed .player-card {
+  transform: rotateY(0deg) rotateX(-50deg) translateY(-19px)
+}
+
+.threed .name {
+  transform: translateX(-50%) translateY(-160%);
+}
+
+.vertical .player-card {
+  transform: rotateZ(-90deg);
+}

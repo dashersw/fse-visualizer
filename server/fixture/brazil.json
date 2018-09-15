@@ -1,0 +1,236 @@
+{
+  "name": "Brazil",
+  "players": [
+    {
+      "position": "GK",
+      "name": "Ederson",
+      "rating": 41,
+      "skill": {
+        "passing": 44,
+        "shooting": 22,
+        "tackling": 11,
+        "saving": 83,
+        "agility": 60,
+        "strength": 68,
+        "penalty_taking": 17,
+        "jumping": 231
+      },
+      "startPOS": [
+        150,
+        0
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "LB",
+      "name": "Filipe Luis",
+      "rating": 75,
+      "skill": {
+        "passing": 80,
+        "shooting": 64,
+        "tackling": 85,
+        "saving": 10,
+        "agility": 74,
+        "strength": 74,
+        "penalty_taking": 65,
+        "jumping": 247
+      },
+      "startPOS": [
+        77,
+        40
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "CB",
+      "name": "Thiago Silva",
+      "rating": 76,
+      "skill": {
+        "passing": 73,
+        "shooting": 64,
+        "tackling": 87,
+        "saving": 10,
+        "agility": 74,
+        "strength": 81,
+        "penalty_taking": 69,
+        "jumping": 275
+      },
+      "startPOS": [
+        127,
+        40
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "CB",
+      "name": "Marquinhos",
+      "rating": 71,
+      "skill": {
+        "passing": 77,
+        "shooting": 49,
+        "tackling": 87,
+        "saving": 8,
+        "agility": 69,
+        "strength": 74,
+        "penalty_taking": 31,
+        "jumping": 260
+      },
+      "startPOS": [
+        167,
+        40
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "RB",
+      "name": "Pedro Geromel",
+      "rating": 60,
+      "skill": {
+        "passing": 83.5,
+        "shooting": 62.5,
+        "tackling": 41.5,
+        "saving": 40.5,
+        "agility": 60.5,
+        "strength": 53.5,
+        "penalty_taking": 73.5,
+        "jumping": 39.5
+      },
+      "startPOS": [
+        217,
+        40
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "CM",
+      "name": "Fernandinho",
+      "rating": 77,
+      "skill": {
+        "passing": 78,
+        "shooting": 72,
+        "tackling": 81,
+        "saving": 10,
+        "agility": 77,
+        "strength": 77,
+        "penalty_taking": 61,
+        "jumping": 274
+      },
+      "startPOS": [
+        97,
+        96
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "CM",
+      "name": "Casemiro",
+      "rating": 76,
+      "skill": {
+        "passing": 73,
+        "shooting": 69,
+        "tackling": 87,
+        "saving": 13,
+        "agility": 66,
+        "strength": 87,
+        "penalty_taking": 66,
+        "jumping": 267
+      },
+      "startPOS": [
+        150,
+        96
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "CM",
+      "name": "Taison",
+      "rating": 69,
+      "skill": {
+        "passing": 75,
+        "shooting": 74,
+        "tackling": 44,
+        "saving": 9,
+        "agility": 89,
+        "strength": 62,
+        "penalty_taking": 72,
+        "jumping": 227
+      },
+      "startPOS": [
+        197,
+        96
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "ST",
+      "name": "Neymar",
+      "rating": 66,
+      "skill": {
+        "passing": 77,
+        "shooting": 78,
+        "tackling": 26,
+        "saving": 10,
+        "agility": 96,
+        "strength": 53,
+        "penalty_taking": 81,
+        "jumping": 269
+      },
+      "startPOS": [
+        97,
+        138
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "ST",
+      "name": "Roberto Firmino",
+      "rating": 73,
+      "skill": {
+        "passing": 78,
+        "shooting": 81,
+        "tackling": 45,
+        "saving": 10,
+        "agility": 82,
+        "strength": 79,
+        "penalty_taking": 72,
+        "jumping": 260
+      },
+      "startPOS": [
+        150,
+        138
+      ],
+      "injured": false,
+      "fitness": 100
+    },
+    {
+      "position": "ST",
+      "name": "Fred",
+      "rating": 55,
+      "skill": {
+        "passing": 51,
+        "shooting": 70,
+        "tackling": 28,
+        "saving": 10,
+        "agility": 41,
+        "strength": 86,
+        "penalty_taking": 64,
+        "jumping": 261
+      },
+      "startPOS": [
+        197,
+        138
+      ],
+      "injured": false,
+      "fitness": 100
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+#container {
+  perspective: 1600;
+  -webkit-perspective: 1600;
+  z-index: 2;
+  transform-origin: 50%;
+  transition-duration: 1s;
+  transition-property: all;
+  transform: translate3d(0, 0, 1px)
+}
+
+#stadium {
+  width: 55.5em;
+  height: 34em;
+  font-size: 16px;
+  margin: 2em auto;
+  transition: 1s transform;
+  transform-style: preserve-3d;
+  transform-origin: 50%;
+  transform: translate3d(0, 0, 1px) rotateX(0.1deg)
+}
+
+.threed.vertical #stadium {
+  transform: rotateZ(0deg) translateX(-4em) scale(1) translateY(0%) rotateY(-50deg);
+}
+
+.threed.vertical #pitch {
+  box-shadow: 2em 0px 4em 0px rgba(0, 0, 0, 0.7);
+}
+
+.threed #stadium {
+  transform: rotateZ(0deg) translateX(0%) scale(1) translateY(0%) rotateY(0deg) rotateX(50deg);
+}
+
+.threed #pitch {
+  box-shadow: 0px 2em 4em 0px rgba(0, 0, 0, 0.7);
+}
+
+.vertical #container {
+  transform: rotateZ(90deg)
+}
+
+.vertical #stadium {
+  transform: translateX(2em) scale(0.65);
+}
+
+.vertical #pitch {
+  box-shadow: 2em 0px 4em 0px rgba(0, 0, 0, 0.7);
+}
+
+.portrait.vertical #stadium {
+  transform: translateX(10em) scale(1);
+}
+
+.portrait.threed.vertical #stadium {
+  transform: rotateZ(0deg) translateX(-4em) scale(1) translateY(0%) rotateY(-50deg);
+}
+
+#pitch {
+  height: 100%;
+  width: calc(100% - 3em);
+  margin: 0 1.5em;
+  top: 0;
+  left: 0;
+  border: 0.12em solid #FFF;
+  background: green;
+  background-image: url('../img/grass.jpg');
+  box-shadow: 0px 2em 4em 0px rgba(0, 0, 0, 0.7);
+  background-repeat: repeat;
+  background-size: 6.1em;
+  background-position: -1.6em -1.2em;
+  transform: translate3d(0, 0, 2px);
+  opacity: 0.99;
+  z-index: 2;
+}
+
+#pitch::before {
+  content: '';
+  width: 9.15em;
+  height: 9.15em;
+  display: block;
+  border: 0.12em solid #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pitch::after {
+  content: '';
+  width: 0.25em;
+  height: 0.25em;
+  display: block;
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pitch .zone {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 0.06em solid #FFF;
+}
+
+#pitch .zone::before,
+#pitch .zone::after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  display: block;
+  border: 0.12em solid #FFF;
+  border-top: 0.12em solid transparent;
+  border-bottom: 0.12em solid transparent;
+  border-left: 0.12em solid transparent;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#pitch .zone::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+#pitch .box {
+  width: 8.25em;
+  height: 20.15em;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-0.1em, -50%);
+  border: 0.12em solid #FFF;
+  background: linear-gradient(left, transparent 0, transparent 3em, green 3em), linear-gradient(top, green 0, green 6em, transparent 6em, transparent 16em, green 16em), linear-gradient(left, transparent 0, transparent 3em, #FFF 3em, #FFF 3.1em, transparent 3.1em), linear-gradient(top, transparent 0, transparent 6em, #FFF 6em, #FFF 6.1em, transparent 6.1em, transparent 16em, #FFF 16em, #FFF 16.1em, transparent 16.1em), green;
+}
+
+#pitch .box::before {
+  content: '';
+  width: 0.25em;
+  height: 0.25em;
+  display: block;
+  background: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(5.5em, -50%);
+}
+
+#pitch .box::after {
+  content: '';
+  width: 9.15em;
+  height: 9.15em;
+  border: 0.12em solid #FFF;
+  clip: rect(0em, 10.15em, 10.2em, 7.2em);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0.925em;
+  transform: translate(0, -50%);
+}
+
+#pitch .zone.right {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+#pitch .net {
+  width: 1.5em;
+  height: 3.66em;
+  display: block;
+  border: 0.12em solid #FFF;
+  position: absolute;
+  top: calc(50% - 1.83em);
+  left: -1.5em;
+  background: repeating-linear-gradient(45deg, transparent 0, transparent 3px, gold 3px, gold 4px, transparent 5px), repeating-linear-gradient(-45deg, transparent 0, transparent 3px, gold 3px, gold 4px, transparent 5px)
+}
+
+#pitch .net::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 9.15em;
+  width: 2.75em;
+  border: 0.12em solid #FFF;
+  top: 50%;
+  left: 0;
+  transform: translate(calc(1.3em), -50%);
+}
+
+#ball {
+  position: absolute;
+  top: 0;
+  left: 1.5em;
+  z-index: 5;
+  transition: 0.2s all linear;
+  transform-style: preserve-3d;
+}
+
+#ball-icon {
+  position: absolute;
+  background: url('../img/ball.svg') white center no-repeat;
+  background-size: 0.8em;
+  border-radius: 50%;
+  height: 0.8em;
+  width: 0.8em;
+  transform: translate3d(0, 0, 1px);
+  transition: 1s all ease-out;
+}
+
+#ball .shadow {
+  position: absolute;
+  transform: translateY(0.05em) rotate(0);
+  height: 1px;
+  top: 0.6em;
+  left: 0em;
+  width: 0.8em;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 3px black;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.7;
+  transition: 1s all linear;
+  ;
+}
+
+.vertical #ball .shadow {
+  transform: translateY(0.35em) translateZ(-0.3em) rotate(-90deg) translateX(0em);
+  top: 0;
+  left: 0.2em;
+}
+
+.threed #ball .shadow {
+  transform: translateY(0.12em) translateZ(-0.3em)
+}
+
+.threed.vertical #ball .shadow {
+  transform: translateY(0.12em) translateZ(-0.3em) rotate(-90deg) translateX(0.4em);
+  left: 0;
+  top: 0.6em
+}
+
+.threed.vertical #ball-icon {
+  transform: rotateY(50deg) rotateX(0deg) translateZ(10px) rotateZ(0);
+}
+
+.threed #ball-icon {
+  transform: rotateY(0deg) rotateX(-50deg) translateZ(10px) translateY(0.12em) rotateZ(0);
+}

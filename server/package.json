@@ -1,0 +1,33 @@
+{
+  "name": "fse-visualizer-server",
+  "version": "1.0.0",
+  "description": "A visual engine for footballSimulationEngine",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose",
+    "start": "node .",
+    "lint": "eslint .",
+    "repl": "node --experimental-repl-await repl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashersw/fse-visualizer.git"
+  },
+  "author": "Armagan Amcalar <armagan@amcalar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashersw/fse-visualizer/issues"
+  },
+  "homepage": "https://github.com/dashersw/fse-visualizer#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^4.9.0",
+    "eslint-config-unu": "^1.2.4",
+    "repl.history": "^0.1.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "footballsimulationengine": "github:GallagherAiden/footballSimulationEngine#master",
+    "socket.io": "^2.1.1"
+  }
+}
