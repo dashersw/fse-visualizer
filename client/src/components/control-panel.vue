@@ -59,6 +59,15 @@ export default {
   width: 100%;
   transition: 1s all ease-out;
   z-index: 10;
+
+  div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 }
 
 .logs {
